@@ -8,31 +8,22 @@
 </head>
 
 <style>
-html {height:100%;font-family:AppleSDGothicNeo-Light,"HelveticaNeue",'Nanum Gothic', sans-serif;background:#f4f4f4;font-size:12px}
-body {height:100%;margin:0}
+body {padding:0;width:80%}
 </style>
 
 <html>
 <body>
 
-<div style='width:100%;height:50px;line-height:50px;border-bottom:1px solid #ccc;background:#fff;font-size:13px;font-weight:bold'>
-<div style='width:1024px;margin:auto'>
-<div style='float:left'>그라데이션툴 네이버검색통계</div>
-<div style='float:right'>그라데이션툴</div>
-</div>
-</div>
-</div>
-
 <div style='width:1024px;margin:auto;background:#fff;padding:10px 0;border-left:1px solid #ccc;border-right:1px solid #ccc;height:100%'>
 그라데이션도구
-<div id='name' style='background:linear-gradient(120deg, #fff 0%, #96e6a1 100%);'>
-sssss
-</div>
+<div id='name' style='background:linear-gradient(120deg, #fff 0%, #96e6a1 100%)'></div>
+
 		<input hidden id='copy'/>
         <input id="a" class="input" value="ccc" />
 		<input id="b" class="input" value="eee" />
 		<button id='btn1'>COPY</button>
-        <script>
+
+<script>
 function copyToClipboard(val) {
   var t = document.createElement("textarea");
   document.body.appendChild(t);
@@ -62,7 +53,7 @@ function copyToClipboard(val) {
 					copyToClipboard(gr);
 					alert(gr);
 				});
-        </script>
+</script>
 
 </div>
 
