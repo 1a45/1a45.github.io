@@ -4,95 +4,35 @@
 <meta charset="utf-8">
 <meta http-equiv="imagetoolbar" content="no">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<META name="title" content="도구모음"/>
-<meta name="description" content="그라데이션툴 색상표 커서아이콘표 네이버검색통계 SEO최적화 위키검색 랜덤이미지 움짤검색 내IP"/>
-<meta name="subject" content="도구모음"/>
-<META name="Keywords" content="그라데이션툴, 색상표, 커서아이콘표, 네이버검색통계, SEO최적화, 위키검색, 랜덤이미지, 움짤검색, 내IP"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
-<title>도구모음</title>
-
 <style>
-html {height:100%;font-family:AppleSDGothicNeo-Light,"HelveticaNeue",'Nanum Gothic', sans-serif;color:#333;background:#f4f4f4;font-size:12px}
+html {height:100%;font-family:AppleSDGothicNeo-Light,"HelveticaNeue",'Nanum Gothic', sans-serif;background:#f4f4f4;font-size:12px}
 body {height:100%;margin:0}
-input {border:1px solid #333;height:30px}
-#btn1 {background:0;border:0;height:30px}
-#btn2, #btn3, #btn4, #btn5 {cursor:pointer}
-#colorbox {width:50%;box-sizing:border-box;padding:5px;line-height:30px;float:left}
-#c1 {height:150px;background:linear-gradient(120deg, #f093fb 0%, #f5576c 100%)}
-#c2 {height:150px;background:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)}
-#c3 {height:150px;background:linear-gradient(120deg, #fff 0%, #96e6a1 100%)}
-#c4 {height:150px;background:linear-gradient(120deg, #48c6ef 0%, #6f86d6 100%)}
-#bor {border:1px solid #ccc}
-#top {width:100%;height:50px;line-height:50px;border-bottom:1px solid #ccc;background:#fff;font-size:13px;font-weight:bold}
-#body {width:1024px;margin:auto;background:#fff;padding:10px 0;border-left:1px solid #ccc;border-right:1px solid #ccc;height:100%}
 </style>
 
 <html>
 <body>
 
-<div id='top'>
+<div style='width:100%;height:50px;line-height:50px;border-bottom:1px solid #ccc;background:#fff;font-size:13px;font-weight:bold'>
 <div style='width:1024px;margin:auto'>
-<div style='float:left'>그라데이션툴 색상표 커서아이콘표 네이버검색통계 SEO최적화 위키검색 랜덤이미지 움짤검색 내IP</div>
-<div style='float:right'>OiO tools</div>
+<div style='float:left'>그라데이션툴 네이버검색통계</div>
+<div style='float:right'>그라데이션툴</div>
 </div>
 </div>
 </div>
 
-<div id='body'>
-
-<div style='margin:0 0 10px 10px'>CSS GRADIENTS GENERATOR CSS 그라데이션 생성기 그라데이션 툴</div>
-<div id='name' style='background:linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)'>
-<div style='height:200px'></div>
+<div style='width:1024px;margin:auto;background:#fff;padding:10px 0;border-left:1px solid #ccc;border-right:1px solid #ccc;height:100%'>
+그라데이션도구
+<div id='name' style='background:linear-gradient(120deg, #fff 0%, #96e6a1 100%);'>
+sssss
 </div>
-
-<div style='margin:10px'>
 		<input hidden id='copy'/>
-        <input id="a" class="input" value="84fab0" />
-		<input id="b" class="input" value="8fd3f4" />
+        <input id="a" class="input" value="ccc" />
+		<input id="b" class="input" value="eee" />
 		<button id='btn1'>COPY</button>
-</div>
-      
-<!--- --->
-<div id='colorbox'>
-<DIV id='bor'>
-<b style='margin: 0 5px'>WARM</b>
-<div id='c1'>
-</div>
-<div style='margin:0 5px'>#f093fb #f5576c<div id='btn2' style='float:right'>COPY</div></div>
-</DIV>
-</div>
-
-<div id='colorbox'>
-<DIV id='bor'>
-<b style='margin: 0 5px'>SKYBLUE</b>
-<div id='c2'>
-</div>
-<div style='margin:0 5px'>#a1c4fd #c2e9fb<div id='btn3' style='float:right'>COPY</div></div>
-</DIV>
-</div>
-
-<div id='colorbox'>
-<DIV id='bor'>
-<b style='margin: 0 5px'>GREEN</b>
-<div id='c3'>
-</div>
-<div style='margin:0 5px'>#ffffff #96e6a1<div id='btn5' style='float:right'>COPY</div></div>
-</DIV>
-</div>
-
-<div id='colorbox'>
-<DIV id='bor'>
-<b style='margin: 0 5px'>COLDBLUE</b>
-<div id='c4'>
-</div>
-<div style='margin:0 5px'>#48c6ef #6f86d6<div id='btn4' style='float:right'>COPY</div></div>
-</DIV>
-</div>
-
-<script>
+        <script>
 function copyToClipboard(val) {
   var t = document.createElement("textarea");
   document.body.appendChild(t);
@@ -107,6 +47,7 @@ function copyToClipboard(val) {
 					var bc = document.getElementById("b").value
 					var gr = 'background:linear-gradient(120deg, #'+ac+' 0%, #'+bc+' 100%)'
 					document.getElementById('name').style = gr;
+					document.getElementById('copy').value = gr;
                 });
 				$("#b").change(function () {
 					var ac = document.getElementById("a").value
@@ -119,25 +60,11 @@ function copyToClipboard(val) {
 					var bc = document.getElementById("b").value
 					var gr = 'background:linear-gradient(120deg, #'+ac+' 0%, #'+bc+' 100%)'
 					copyToClipboard(gr);
-				});
-				$('#btn2').click(function() {
-					var gr = 'background:linear-gradient(120deg, #f093fb 0%, #f5576c 100%)'
-					copyToClipboard(gr);
-				});
-				$('#btn3').click(function() {
-					var gr = 'background:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)'
-					copyToClipboard(gr);
-				});
-				$('#btn4').click(function() {
-					var gr = 'background:linear-gradient(120deg, #48c6ef 0%, #6f86d6 100%)'
-					copyToClipboard(gr);
-				});
-				$('#btn5').click(function() {
-					var gr = 'background:linear-gradient(120deg, #fff 0%, #96e6a1 100%)'
-					copyToClipboard(gr);
+					alert(gr);
 				});
         </script>
 
 </div>
+
 		</body>
 		</html>
